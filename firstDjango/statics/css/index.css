@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: rgb(229, 167, 167);
+    height: 100%;
+}
+
+.container {
+    /* height: 100%; */
+    width: 100%;
+    /* max-width: 1330px; */
+    padding-inline: 20px;
+    padding: 10px;
+}
+
+.first ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}

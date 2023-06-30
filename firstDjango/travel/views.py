@@ -8,4 +8,4 @@ def travelHello(request):
 # Create your views here.
 
 def travelHello2(request):
-    return HttpResponse("This is for nested routing which is first main urls then apps urls")
+    return HttpResponse("This is for nested routing which is first main urls then apps urls",{"range":5})
