@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+
+{% block data %}
+hello this is rutvik
+
+<div class="first-element container">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Company</td>
+            <td>Roll Number</td>
+        </tr>
+        {% for people in peopleData %}
+        <tr>
+            <td>{{people.name }}</td>
+            <td>{{people.CompanyName }}</td>
+            <td>{{people.RollNum }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% for ind in range %}
+<h2>ind</h2>
+{% endfor %}
+
+{% endblock %}
