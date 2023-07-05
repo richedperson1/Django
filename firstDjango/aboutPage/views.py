@@ -11,12 +11,12 @@ def rendingDataAbout(request):
     peopleData = [
         {"name":"Rutvik",
          "LastName":"Jaiswal",
-         "RollNum":26,
+         "RollNum":29,
          "CompanyName":"Amazon"
          },
         {"name":"Jadu",
          "LastName":"Jaiswal",
-         "RollNum":26,
+         "RollNum":28,
          "CompanyName":"Harman"
          },
         {"name":"Prasad",

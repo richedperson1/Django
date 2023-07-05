@@ -20,8 +20,12 @@ hello this is rutvik
         {% endfor %}
     </table>
 </div>
-{% for ind in range %}
-<h2>ind</h2>
+{% for ind in peopleData %}
+{% if ind.RollNum > 26 %}
+<div class="container">
+    <h2>Roll Number present</h2>
+</div>
+{% endif %}
 {% endfor %}
 
 {% endblock %}
