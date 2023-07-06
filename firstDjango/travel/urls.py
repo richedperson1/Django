@@ -7,5 +7,5 @@ from . import views
 
 urlpatterns = [
     path("",views.travelHello,name="travelWeb"),
-    path("/change",views.travelHello2,name="travelWeb"),
+    path("change",views.travelHello2,name="travelWeb")
 ]

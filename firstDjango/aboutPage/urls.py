@@ -9,9 +9,9 @@ def dynamicURL2(request,name):
     return HttpResponse(f"The name of student is {name}")
 
 urlpatterns = [
-    path("/<int:age>",dynamicURL),
-    path("/",views.aboutPage),
-    path("/details",views.rendingDataAbout)
+    path("<int:age>",dynamicURL),
+    path("",views.aboutPage),
+    path("details",views.rendingDataAbout)
 ]
 
 
