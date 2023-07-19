@@ -7,7 +7,7 @@ from django.db import models
 class StudentTable(models.Model):
     firstName = models.CharField(max_length=23)
     lastName  = models.CharField(max_length = 23)
-    mobNumber = models.IntegerField()
-    emailID   = models.EmailField()
+    mobNumber = models.IntegerField(verbose_name="Mobile number of student")
+    emailID   = models.EmailField(verbose_name = "Student Email ID")
     # imageFile = models.ImageField()
     age       = models.IntegerField()
