@@ -6,7 +6,6 @@ class StudentTable(models.Model):
     lastName  = models.CharField(max_length = 22)
     mobNumber = models.IntegerField()
     emailID   = models.EmailField()
-    # imageFile = models.ImageField()
     age       = models.IntegerField()
 
 
