@@ -10,4 +10,7 @@ class StudentTable(models.Model):
     mobNumber = models.IntegerField(verbose_name="Mobile number of student")
     emailID   = models.EmailField(verbose_name = "Student Email ID")
     # imageFile = models.ImageField()
+    age1       = models.IntegerField()
     age       = models.IntegerField()
+    
+    
