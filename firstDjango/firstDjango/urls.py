@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from vegiProject.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",include("helloworld.urls"), name="main-view"),
     path("about",include("aboutPage.urls"),name="about"),
-    path("travel",include("travel.urls"))
+    path("travel",include("travel.urls")),
+    path("renderVegi/",renderVegi,name="renderVegi")
 ]

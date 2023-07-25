@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "travel",
     "aboutPage",
-    "helloworld"
+    # "helloworld",
+    "vegiProject"
 ]
 
 MIDDLEWARE = [
