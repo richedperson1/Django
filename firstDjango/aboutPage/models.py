@@ -25,4 +25,5 @@ class parentInfo(models.Model):
     motherName = models.CharField(max_length=60,verbose_name="Student mother name")
     mobileNumber = PhoneNumberField()
     occupations = models.CharField(max_length=20)
-    
+    def __str__(self) -> str:
+        return f"Student Name : {self.studentName}, Father Name : {self.fatherName}"
