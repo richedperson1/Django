@@ -1,4 +1,6 @@
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
+from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 # Python manage.py makemigrations
@@ -21,5 +23,6 @@ class parentInfo(models.Model):
     studentName = models.CharField(max_length=50,verbose_name="name of student those parent info need to save")
     fatherName = models.CharField(max_length=60,verbose_name="Student father name")
     motherName = models.CharField(max_length=60,verbose_name="Student mother name")
-    mobileNumber = models.IntegerField(verbose_name="student guardian of number")
+    mobileNumber = PhoneNumberField()
     occupations = models.CharField(max_length=20)
+    
