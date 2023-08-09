@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "travel",
     "aboutPage",
     # "helloworld",
-    "vegiProject"
+    "vegiProject",
+    "phonenumber_field"
 ]
 
 MIDDLEWARE = [
