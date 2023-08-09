@@ -12,5 +12,8 @@ class StudentTable(models.Model):
     # imageFile = models.ImageField()
     age1       = models.IntegerField()
     age       = models.IntegerField()
+
+    def __str__(self) -> str:
+        return f"Name : {self.firstName}, Age : {self.age}"
     
     
