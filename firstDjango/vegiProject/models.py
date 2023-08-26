@@ -6,5 +6,5 @@ from django.db import models
 
 class receipe(models.Model):
     dishName = models.CharField(max_length=100)
-    dishReceipe = models.TextField()
+    dishReceipe = models.TextField(verbose_name="Description of the dish receipe for particular dishs")
     dishImg = models.ImageField(upload_to="dishImg")
