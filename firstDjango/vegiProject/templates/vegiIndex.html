@@ -37,7 +37,8 @@
   </table>
 </div>
 <div class="col-6 mt-5 mb-5 mx-auto">
-  <form class="card shadow-lg p-3">
+  <form class="card shadow-lg p-3" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
     <div class="form-group">
       <label for="exampleInputEmail1">Dish Name</label>
       <input
@@ -46,6 +47,7 @@
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         placeholder="Enter Dish Name"
+        name="dish-name"
       />
     </div>
 
@@ -56,6 +58,7 @@
         class="form-control"
         id="exampleInputPassword1"
         placeholder="Enter the receipe"
+        name="dish-receipe"
       />
     </div>
 
@@ -68,6 +71,7 @@
         type="file"
         class="form-control-file mt-3"
         id="exampleFormControlFile1"
+        name="dish-image"
       />
     </div>
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
