@@ -1,41 +1,5 @@
-{% extends "index.html" %} {% block data %}
-<div class="first-element container">
-  <h2>Hello this is vegi pages</h2>
+{% extends "index1.html" %} {% block data %}
 
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti modi
-  tenetur fuga temporibus debitis. Expedita cum eaque sit. Sapiente error
-  quaerat veritatis ipsa, sint animi adipisci tempora labore odio. Quam.
-  <table class="table table-primary table-dark table-striped-column mt-5">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>Rutvik</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@Jaiswal</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="1">Larry the Bird</td>
-        <td>twitter</td>
-        <td>Patil</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 <div class="col-6 mt-5 mb-5 mx-auto">
   <form class="card shadow-lg p-3" method="post" enctype="multipart/form-data">
     {% csrf_token %}
@@ -76,5 +40,6 @@
     </div>
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
   </form>
+  <h2>{{ receipes }}</h2>
 </div>
 {% endblock %}

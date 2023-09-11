@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import *
 # Create your views here.
 
@@ -15,4 +15,9 @@ def renderVegi(request):
             dishReceipe = dishReceipe ,
             dishImg = dishImage
         )
-    return render(request,"vegiIndex.html")
+        return redirect("/renderVegi/")
+    
+    
+    querySet = receipe.objects.all()
+    context = {"receipes":querySet}
+    return render(request,"vegiIndex.html",context)
