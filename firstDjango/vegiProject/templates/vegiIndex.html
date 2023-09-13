@@ -40,6 +40,12 @@
     </div>
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
   </form>
-  <h2>{{ receipes }}</h2>
+  <div>
+    {% for rec in receipes %}
+    <img src="{{ rec.dishImg }}" /><img />
+    <li>{{ rec.dishName }}, {{ rec.dishReceipe }} ,{{ rec.dishImg }}</li>
+    <li></li>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}
